@@ -1,2 +1,2 @@
-# Gym-Buddy
+# Gym-Buddy (Active Project)
 Workout generator application
