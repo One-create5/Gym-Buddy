@@ -34,7 +34,7 @@ Given the workout plan is already created be able to download the plan as a pdf 
 
 ### UML
 
-![UML image](https://github.com/One-create5/Gym-Buddy/blob/main/Requirements/UML.png)
+![UML image](https://github.com/One-create5/Gym-Buddy/blob/main/pictures/UML.png)
 
 ### Requirements
 1.	System shall correctly identify the user
