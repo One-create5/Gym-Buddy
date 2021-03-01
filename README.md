@@ -25,7 +25,7 @@ A web app that helps the user develop a workout program. This program will help 
  [top](#top)
  
  ### <a name="wireframe"></a> Wireframe Sketch
- ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/WireFrame.png)
+ ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/pictures/WireFrame.png)
  
 
 [top](#top)
