@@ -97,7 +97,7 @@ Given the workout plan is already created be able to download the plan as a pdf 
 | 1.1 | System shall ask the user to login |  | Not Tested |  |  | 
 | 1.1.1 | System shall create new account if new user |  | Not Tested |  |  | 
 | 1.1.1.1 | System shall provide capability to enter user’s information |  | Not Tested |  |  | 
-| 1.2 | System shall login the user |  | Not Tested |  |  | 
+| 1.2 | System shall login the user in |  | Not Tested |  |  | 
 | 2 | System shall display customer account | Website Layout | Not Tested |  |  | 
 | 2.1 | System shall provide capability to update user information |  | Not Tested |  |  | 
 | 2.2 | System shall provide capability to create new workout plan |  | Not Tested |  |  | 
