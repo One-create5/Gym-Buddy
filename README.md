@@ -1,4 +1,4 @@
-# Gym-Buddy (Active Project)
+# <a name="top"></a> Gym-Buddy (Active Project)
 Workout generator application
 
 # Table of Contents
@@ -14,14 +14,21 @@ Workout generator application
 ## <a name="concept"></a> Concept 
 A web app that helps the user develop a workout program. This program will help the user get stronger (Powerlifting) , improve their physic (Boodybuilding), or improve both (power-building).
 
+
+[top](#top)
+
 ### <a name="ERD"></a>  ERD and Database
  ![Image 1](https://github.com/One-create5/Gym-Buddy/blob/main/Database/ERD%20diagram.png)
  <br>
  [Database](https://github.com/One-create5/Gym-Buddy/blob/main/Database/GymBuddyDB.sql)
  
+ [top](#top)
+ 
  ### <a name="wireframe"></a> Wireframe Sketch
  ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/WireFrame.png)
  
+
+[top](#top)
 
 ### <a name="userStories"></a> User Stories
 User story 1
@@ -31,6 +38,8 @@ As a beginner with no experience in creating a workout plan, I want to be able t
 User story 2
 
 As a veteran in creating workout plans, I need to be able to download my created workout as a excel file or a pdf file.
+
+[top](#top)
 
 ### <a name="useCase"></a> Use Case
 
@@ -42,9 +51,13 @@ Given a workout plan be able to display the workout plan in a table.
 
 Given the workout plan is already created be able to download the plan as a pdf or excel file.
 
+[top](#top)
+
 ### <a name="UML"></a> UML
 
 ![UML image](https://github.com/One-create5/Gym-Buddy/blob/main/pictures/UML.png)
+
+[top](#top)
 
 ### <a name="requirements"></a> Requirements
 1.	System shall correctly identify the user
@@ -74,6 +87,8 @@ Given the workout plan is already created be able to download the plan as a pdf 
      3.1.	Given authorization, system shall export file
 
 
+[top](#top)
+
 ### <a name="testing"></a> Testing
 
 | Test ID | Requirement | Test Procedure | Current Status | Time Stamp | Build |
@@ -92,3 +107,5 @@ Given the workout plan is already created be able to download the plan as a pdf 
 | 3 | System shall export workout plan as PDF or Excel file |  | Not Tested |  |  | 
 | 3.1 | Given authorization, system shall export file |  | Not Tested |  |  | 
 
+
+[top](#top)
