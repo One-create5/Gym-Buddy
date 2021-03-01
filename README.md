@@ -8,4 +8,4 @@ A web app that helps the user develop a workout program. This program will help 
  ![Image 1](https://github.com/One-create5/Gym-Buddy/blob/main/Database/ERD%20diagram.png)
  
  ## wireframe sketch
- ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/wireframe.png)
+ ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/WireFrame.png)
