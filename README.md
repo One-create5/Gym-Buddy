@@ -4,8 +4,10 @@ Workout generator application
 ## Concept 
 A web app that helps the user develop a workout program. This program will help the user get stronger (Powerlifting) , improve their physic (Boodybuilding), or improve both (power-building).
 
-### ERD
+### ERD and Database
  ![Image 1](https://github.com/One-create5/Gym-Buddy/blob/main/Database/ERD%20diagram.png)
+ <br>
+ [Database](https://github.com/One-create5/Gym-Buddy/blob/main/Database/GymBuddyDB.sql)
  
  ### Wireframe Sketch
  ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/WireFrame.png)
