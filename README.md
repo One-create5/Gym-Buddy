@@ -3,20 +3,28 @@ Workout generator application
 
 # Table of Contents
 * [Concept](#concept)
+* [ERD](#ERD)
+* [Database](https://github.com/One-create5/Gym-Buddy/blob/main/Database/GymBuddyDB.sql)
+* [Wireframe](#wireframe)
+* [User Stories](#userStories)
+* [Use case](#useCase)
+* [UML](#UML)
+* [Requirements](#requirements)
+* [Testing](#testing)
 
 ## <a name="concept"></a> Concept 
 A web app that helps the user develop a workout program. This program will help the user get stronger (Powerlifting) , improve their physic (Boodybuilding), or improve both (power-building).
 
-### ERD and Database
+### <a name="ERD"></a>  ERD and Database
  ![Image 1](https://github.com/One-create5/Gym-Buddy/blob/main/Database/ERD%20diagram.png)
  <br>
  [Database](https://github.com/One-create5/Gym-Buddy/blob/main/Database/GymBuddyDB.sql)
  
- ### Wireframe Sketch
+ ### <a name="wireframe"></a> Wireframe Sketch
  ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/WireFrame.png)
  
 
-### User Stories
+### <a name="userStories"></a> User Stories
 User story 1
 
 As a beginner with no experience in creating a workout plan, I want to be able to make a workout plan that will help me reach my fitness my goals. 
@@ -25,7 +33,7 @@ User story 2
 
 As a veteran in creating workout plans, I need to be able to download my created workout as a excel file or a pdf file.
 
-### Use Case
+### <a name="useCase"></a> Use Case
 
 Given a workout plan be able to save it.
 
@@ -35,11 +43,11 @@ Given a workout plan be able to display the workout plan in a table.
 
 Given the workout plan is already created be able to download the plan as a pdf or excel file.
 
-### UML
+### <a name="UML"></a> UML
 
 ![UML image](https://github.com/One-create5/Gym-Buddy/blob/main/pictures/UML.png)
 
-### Requirements
+### <a name="requirements"></a> Requirements
 1.	System shall correctly identify the user
 
     1.1.	System shall ask the user to login.
@@ -67,7 +75,7 @@ Given the workout plan is already created be able to download the plan as a pdf 
      3.1.	Given authorization, system shall export file
 
 
-### Testing
+### <a name="testing"></a> Testing
 
 | Test ID | Requirement | Test Procedure | Current Status | Time Stamp | Build |
 | --- | --- | --- | --- | --- | --- | 
