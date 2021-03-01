@@ -18,7 +18,7 @@ A web app that helps the user develop a workout program. This program will help 
 [top](#top)
 
 ### <a name="ERD"></a>  ERD and Database
- ![Image 1](https://github.com/One-create5/Gym-Buddy/blob/main/Database/ERD%20diagram.png)
+ ![Image 1](https://github.com/One-create5/Gym-Buddy/blob/main/pictures/ERD%20diagram.png)
  <br>
  [Database](https://github.com/One-create5/Gym-Buddy/blob/main/Database/GymBuddyDB.sql)
  
