@@ -10,24 +10,6 @@ A web app that helps the user develop a workout program. This program will help 
  ### Wireframe Sketch
  ![Image 2](https://github.com/One-create5/Gym-Buddy/blob/main/Wireframe/WireFrame.png)
  
- ### User Stories
-User story 1
-
-As a beginner with no experience in creating a workout plan, I want to be able to make a workout plan that will help me reach my fitness my goals. 
-
-User story 2
-
-As a veteran in creating workout plans, I need to be able to download my created workout as a excel file or a pdf file.
-
-### Use Case
-
-Given a workout plan be able to save it.
-
-Given a fitness goal create a workout plan so that the user can begin to work out.
-
-Given a workout plan be able to display the workout plan in a table.
-
-Given the workout plan is already created be able to download the plan as a pdf or excel file.
 
 ### UML
 
