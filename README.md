@@ -3,8 +3,7 @@ Workout generator application
 
 # Table of Contents
 * [Concept](#concept)
-* [ERD](#ERD)
-* [Database](https://github.com/One-create5/Gym-Buddy/blob/main/Database/GymBuddyDB.sql)
+* [ERD and Database](#ERD)
 * [Wireframe](#wireframe)
 * [User Stories](#userStories)
 * [Use case](#useCase)
