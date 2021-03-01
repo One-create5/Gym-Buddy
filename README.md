@@ -1,7 +1,10 @@
 # Gym-Buddy (Active Project)
 Workout generator application
 
-## Concept 
+# Table of Contents
+* [Concept](#concept)
+
+## <a name="concept"></a> Concept 
 A web app that helps the user develop a workout program. This program will help the user get stronger (Powerlifting) , improve their physic (Boodybuilding), or improve both (power-building).
 
 ### ERD and Database
