@@ -42,3 +42,21 @@ A web app that helps the user develop a workout program. This program will help 
      
      3.1.	Given authorization, system shall export file
 
+### Testing
+
+| Test ID | Requirement | Test Procedure | Current Status | Time Stamp | Build |
+| --- | --- | --- | --- | --- | --- | 
+| 1 | System shall correctly identify the user | User Login | Not Tested |  |  | 
+| 1.1 | System shall ask the user to login |  | Not Tested |  |  | 
+| 1.1.1 | System shall create new account if new user | TODO | Not Tested |  |  | 
+| 1.1.1.1 | System shall provide capability to enter user’s information |  | Not Tested |  |  | 
+| 1.2 | System shall login the user |  | Not Tested | TODO | TODO | 
+| 2 | System shall display customer account | Website Layout | Not Tested | TODO | TODO | 
+| 2.1 | System shall provide capability to update user information |  | Not Tested | TODO | TODO | 
+| 2.2 | System shall provide capability to create new workout plan |  | Not Tested | TODO | TODO | 
+| 2.2.1 | System shall provide the capability to pick between three workout plans | TODO | Not Tested | TODO | TODO | 
+| 2.3 | System shall provide capability to save workout plan |  | Not Tested | TODO | TODO | 
+| 2.3.1 | System shall provide the capability to save workout plan as a PDF or Excel file | TODO | Not Tested | TODO | TODO | 
+| 3 | System shall export workout plan as PDF or Excel file |  | Not Tested | TODO | TODO | 
+| 3.1 | Given authorization, system shall export file |  | Not Tested | TODO | TODO | 
+
