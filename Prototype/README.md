@@ -1,7 +1,7 @@
 <h1 align="center">:hammer: Prototype as of March 11, 2021 :hammer:</h1>
 <p align="center">This is the design prototype for a workout buddy</p>
 
-[Back to Home](https://github.com/One-create5/Gym-Buddy/edit/main/README.md)
+[Back to Home](https://github.com/One-create5/Gym-Buddy)
 <br>
 <hr>
 
@@ -29,4 +29,4 @@
 <br>
 <hr>
 
-[Home](https://github.com/One-create5/Gym-Buddy/edit/main/README.md)
+[Home](https://github.com/One-create5/Gym-Buddy)
