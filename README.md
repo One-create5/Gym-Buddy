@@ -10,6 +10,7 @@ Workout generator application
 * [UML](#UML)
 * [Requirements](#requirements)
 * [Testing](#testing)
+* [Prototype](https://github.com/One-create5/Gym-Buddy/blob/main/Prototype/README.md)
 
 ## <a name="concept"></a> Concept 
 A web app that helps the user develop a workout program. This program will help the user get stronger (Powerlifting) , improve their physic (Boodybuilding), or improve both (power-building).
@@ -107,5 +108,6 @@ Given the workout plan is already created be able to download the plan as a pdf 
 | 3 | System shall export workout plan as PDF or Excel file |  | Not Tested |  |  | 
 | 3.1 | Given authorization, system shall export file |  | Not Tested |  |  | 
 
-
 [top](#top)
+
+### [Prototype](https://github.com/One-create5/Gym-Buddy/blob/main/Prototype/README.md)
