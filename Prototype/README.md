@@ -1,5 +1,5 @@
 <h1 align="center">:hammer: Prototype as of March 11, 2021 :hammer:</h1>
-<p align="center">This is the design prototype for a workout buddy which are (static) html pages</p>
+<p align="center">This is the design prototype for a workout buddy. Currently only (static) html pages</p>
 
 [Back to Home](https://github.com/One-create5/Gym-Buddy)
 <br>
