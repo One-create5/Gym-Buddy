@@ -25,7 +25,7 @@
 
 <h2 align="center">Prototype "Workout" view page</h2>
 
-![Workout](https://github.com/One-create5/Gym-Buddy/blob/main/Prototype/prototypePictures/workouts.JPG)
+![Workout](https://github.com/One-create5/Gym-Buddy/blob/main/Prototype/prototypePictures/workout.JPG)
 <br>
 <hr>
 
