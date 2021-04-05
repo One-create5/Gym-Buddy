@@ -1,0 +1,12 @@
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\GymBuddyMVC\GymBuddyDB\bin\Debug\GymBuddyDB.dacpac
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\GymBuddyMVC\GymBuddyDB\bin\Debug\GymBuddyDB.dll
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\GymBuddyMVC\GymBuddyDB\bin\Debug\GymBuddyDB.pdb
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\GymBuddyMVC\GymBuddyDB\obj\Debug\GymBuddyDB.sqlprojAssemblyReference.cache
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\GymBuddyMVC\GymBuddyDB\obj\Debug\GymBuddyDB.dll
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\GymBuddyMVC\GymBuddyDB\obj\Debug\GymBuddyDB.pdb
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddyMVC\GymBuddyDB\bin\Debug\GymBuddyDB.dacpac
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddyMVC\GymBuddyDB\bin\Debug\GymBuddyDB.dll
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddyMVC\GymBuddyDB\bin\Debug\GymBuddyDB.pdb
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddyMVC\GymBuddyDB\obj\Debug\GymBuddyDB.sqlprojAssemblyReference.cache
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddyMVC\GymBuddyDB\obj\Debug\GymBuddyDB.dll
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddyMVC\GymBuddyDB\obj\Debug\GymBuddyDB.pdb
