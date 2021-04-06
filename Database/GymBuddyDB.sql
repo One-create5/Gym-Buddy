@@ -1,8 +1,8 @@
---
---DROP DATABASE IF EXISTS GymBuddyDB
---CREATE DATABASE GymBuddyDB
 
---USE GymBuddyDB
+DROP DATABASE IF EXISTS GymBuddyDB
+CREATE DATABASE GymBuddyDB
+
+USE GymBuddyDB
 
 DROP TABLE IF EXISTS Categories
 CREATE TABLE Categories
@@ -11,7 +11,6 @@ CREATE TABLE Categories
   , Title NVARCHAR (30)
   , WorkOutID INT NOT NULL UNIQUE 
 )
-
 
 
 DROP TABLE IF EXISTS Workouts
@@ -35,6 +34,16 @@ CREATE TABLE MAXLifts
  , WorkoutID INT FOREIGN KEY REFERENCES Workouts(ID)
 )
 
+DROP TABLE IF EXISTS WorkOutProgram
+CREATE TABLE WorkOutProgram
+(
+ ProgramID INT PRIMARY KEY
+ ,Title NVARCHAR(80)
+ ,[Description] NVARCHAR(90)
+ ,CategoryID INT FOREIGN KEY REFERENCES Categories(ID)
+ ,Days DATE
+)
+
 DROP TABLE IF EXISTS Customers
 CREATE TABLE Customers
 (
@@ -44,19 +53,8 @@ CREATE TABLE Customers
  , Age INT
  , Height DECIMAL (3,2)
  , [Weight] DECIMAL (5,2)
- , ProgramID INT NOT NULL UNIQUE
+ , ProgramID INT FOREIGN KEY REFERENCES WorkOutProgram(ProgramID)
  , MAXLifts INT FOREIGN KEY REFERENCES MAXLifts(MAXLiftsID) 
 )
 
-
-
-DROP TABLE IF EXISTS Program
-CREATE TABLE Program
-(
- ProgramID INT FOREIGN KEY REFERENCES Customers(ProgramID)
- ,Title NVARCHAR(80)
- ,[Description] NVARCHAR(90)
- ,CategoryID INT FOREIGN KEY REFERENCES Categories(ID)
- ,Days DATE
-)
 
