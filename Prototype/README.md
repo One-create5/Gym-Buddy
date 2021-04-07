@@ -33,4 +33,6 @@
 
 <p>I merged the workout page and the home page. Now you can select three different workouts powerlifting, bodybuilding, power-building. In the Nav bar on the drop-down button called Current workouts is where you can find your current and past workouts.</p>
 
+![main page update](https://github.com/One-create5/Gym-Buddy/blob/main/pictures/UpdateMainPage20210407.JPG)
+
 [Home](https://github.com/One-create5/Gym-Buddy)
