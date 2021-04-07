@@ -1,4 +1,4 @@
-<h1 align="center">:hammer: Prototype as of March 11, 2021 :hammer:</h1>
+<h1 align="center">:hammer: Prototype as of April 7, 2021 :hammer:</h1>
 <p align="center">This is the design prototype for a workout buddy. Currently only (static) html pages</p>
 
 [Back to Home](https://github.com/One-create5/Gym-Buddy)
@@ -28,5 +28,9 @@
 ![Workout](https://github.com/One-create5/Gym-Buddy/blob/main/Prototype/prototypePictures/workout.JPG)
 <br>
 <hr>
+
+<h2 align="center">Update to Prototype "Workout" view page April 7 2021</h2>
+
+<p>I merged the workout page and the home page. Now you can select three different workouts powerlifting, bodybuilding, power-building. In the Nav bar on the drop-down button called Current workouts is where you can find your current and past workouts.</p>
 
 [Home](https://github.com/One-create5/Gym-Buddy)
