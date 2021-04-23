@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="collapse navbar-collapse" style="float: right" id="navcol-1">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a id="manage" class="nav-link" style="color: #b88746;" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>
+            <li class="nav-item ">
+                <a id="manage" class="nav-link" style="color: #b88746;" asp-area="" asp-controller="MaxLifts" asp-action="Index">Max Lifts</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#" style="color: #b88746;">Current Workouts</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">First Item</a>
+                    <a class="dropdown-item" href="#">Second Item</a>
+                    <a class="dropdown-item" href="#">Third Item</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button id="logout" type="submit" style="background: #b88746;color: #072c50;" class="nav-link btn  rounded-pill">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <div class="collapse navbar-collapse" id="navcol-1">
+        <span class="navbar-text actions">
+            <a class="login" href='/Identity/Account/Login' style="color: #b88746;">Log In</a>
+            <a class="btn btn-light action-button" role="button" href='/Identity/Account/Register' style="background: #b88746;color: #072c50;">Sign Up</a>
+        </span>
+    </div>
+}

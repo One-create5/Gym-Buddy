@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Gym Buddy</title>
+    <link rel="shortcut icon" href="/images/bullBuddy.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/btn-hover.css">
+    <link rel="stylesheet" href="/css/Footer-Basic.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+    <link rel="stylesheet" href="/css/Navigation-with-Buttons.css">
+    <link rel="stylesheet" href="/css/Projects-Clean.css">
+    <link rel="stylesheet" href="~/fontawesome/css/all.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background: #072c50;">
+            <div class="container">
+                <a href="@Url.Action("Index", "Home")" style="margin: 0px 0px">
+                    <img src="~/images/bullBuddy.png" style="height: 100px;background: #ffffff;color: rgb(51, 51, 51);" title="Bull Buddy" alt="Picture of a bull figure" />
+                </a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <partial name="_LoginPartial.cshtml" />
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer-basic">
+        <div class="social">
+            <a href="https://www.instagram.com/lucky_conquerorr/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-a-mateos/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/One-create5">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <!--  <p class="copyright">Company Name © 2021</p>-->
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

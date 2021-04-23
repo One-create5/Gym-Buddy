@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="/css/btn-hover.css">
+<section class="projects-clean">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Pick your workout plan</h2>
+            <p class="text-center">What are your fitness goals Powerlifting (Strength), Bodybuilding (Physique), or Power-building (Hybrid)</p>
+        </div>
+        <div class="row projects">
+            <div class="col-sm-6 col-lg-4 item">
+                <img class="img-fluid" src="../images/man-workout-with-weightlifting.jpg">
+                <p class="credit">Designed by <a href='https://www.freepik.com/photos/man'>Freepik</a></p>
+                <h3 class="name">Powerlifting</h3>
+                <p class="description">Improve your Strength in squat, bench press, and deadlift. You will place more value on these three movements over any other exercise</p>
+                <div class="text-center" style="margin: 20px ;"><button class="btn btn-hover" type="button">Create</button></div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item">
+                <img class="img-fluid" src="../images/female-bodybuilder-training-with-dumbbells.jpg">
+                <p class="credit">Designed by <a href='https://www.freepik.com/photos/man'>Freepik</a></p>
+                <h3 class="name">Bodybuilding</h3>
+                <p class="description">Improve your aesthetic physique in the use of progressive resistance exercise to control and develop your musculature by muscle hypertrophy.&nbsp;</p>
+                <div style="margin: 20px;"><button class="btn btn-hover" type="button">Create</button></div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item">
+                <img class="img-fluid" src="../images/young-fitness-man-studio.jpg">
+                <p class="credit">Designed by <a href='https://www.freepik.com/photos/man'>Freepik</a></p>
+                <h3 class="name">Power-building</h3>
+                <p class="description">Improve both your physic and strength. This workout plan takes the essence of both powerlifting and bodybuilding and combines them.</p>
+                <div style="margin: 20px;"><button class="btn btn-hover" type="button">Create</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    @Html.ActionLink("Categories", "Index", "Categories")<br />
+    @Html.ActionLink("UserWorkouts","Index","UserWorkouts")
+</div>
