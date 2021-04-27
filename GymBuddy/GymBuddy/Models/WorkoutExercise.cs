@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,22 +13,17 @@ namespace GymBuddy.Models
         [Key]
         public int WorkoutExerciseId { get; set; }
 
+        public string Name { get; set; }
+
+        public int Sets { get; set; }
         public int Reps { get; set; }
 
-
+        [DisplayName("One Rep Max")]
         [Column(TypeName = "decimal(5,2)")]
-        public decimal Weight { get; set; }
+        public decimal? OneRepMax { get; set; }
 
-
-        public int ExerciseId { get; set; }
-        public Exercise Exercise { get; set; }
-
-
-        public int MaxLiftId { get; set; }
-        public MaxLift MaxLift { get; set; }
-
-        public int UserWorkoutId { get; set; }
-        public UserWorkout UserWorkout { get; set; }
+        [DisplayName("Rate of Perceived Exertion")]
+        public int? RPE { get; set; }
 
     }
 }

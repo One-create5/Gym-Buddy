@@ -1,0 +1,38 @@
+﻿@model GymBuddy.Models.ViewModels.PowerliftingVM
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 1</h3>
+    <table class="table">
+        <partial name="~/Views/PowerliftWorkouts/PowerliftPartials/_Week1Partial.cshtml" />
+    </table>
+</div>
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 2</h3>
+    <table class="table">
+        <partial name="~/Views/PowerliftWorkouts/PowerliftPartials/_Week2Partial.cshtml" />
+    </table>
+</div>
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 3</h3>
+    <table class="table">
+        <partial name="~/Views/PowerliftWorkouts/PowerliftPartials/_Week3Partial.cshtml" />
+    </table>
+</div>
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 4</h3>
+    <table class="table">
+        <partial name="~/Views/PowerliftWorkouts/PowerliftPartials/_Week4Partial.cshtml" />
+    </table>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PowerliftWorkout.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

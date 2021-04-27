@@ -12,13 +12,10 @@
             <li class="nav-item ">
                 <a id="manage" class="nav-link" style="color: #b88746;" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
             </li>
-            <li class="nav-item ">
-                <a id="manage" class="nav-link" style="color: #b88746;" asp-area="" asp-controller="MaxLifts" asp-action="Index">Max Lifts</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#" style="color: #b88746;">Current Workouts</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">First Item</a>
+                    <a class="dropdown-item" asp-controller="PowerliftWorkouts" asp-action="Index">Powerlift</a>
                     <a class="dropdown-item" href="#">Second Item</a>
                     <a class="dropdown-item" href="#">Third Item</a>
                 </div>

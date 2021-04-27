@@ -12,8 +12,10 @@ namespace GymBuddy.Models
 
         public string LastName { get; set; }
 
-        ICollection<Category> Categories { get; set;}
+        public ICollection<PowerliftWorkout> PowerliftWorkouts { get; set; }
 
-        public MaxLift MaxLift { get; set; }
+        public ICollection<BodyBuildingWorkout> BodyBuildingWorkouts { get; set; }
+
+        public ICollection<PowerBuildingWorkout> PowerBuildingWorkouts { get; set; }
     }
 }

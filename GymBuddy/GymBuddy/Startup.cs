@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GymBuddy.Models;
 
 namespace GymBuddy
 {
@@ -66,6 +67,8 @@ namespace GymBuddy
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+           // SeedUser.EnsurePopulated(app);
         }
     }
 }

@@ -15,18 +15,15 @@ namespace GymBuddy.Data
 
         }
 
-        //public MaxLift MaxLift { get; set; }
-
-        public DbSet<Category> Categories { get; set; }
-
-        public DbSet<Exercise> Exercises { get; set; }
-
-        public DbSet<MaxLift> MaxLifts { get; set; }
-
-        public DbSet<UserWorkout> UserWorkouts { get; set; }
 
         public DbSet<WorkoutExercise> WorkoutExercises { get; set; }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+
+        public DbSet<PowerliftWorkout> PowerliftWorkouts { get; set; }
+
+        public DbSet<BodyBuildingWorkout> BodyBuildingWorkouts { get; set; }
+
+        public DbSet<PowerBuildingWorkout> PowerBuildingWorkouts { get; set; }
     }
 }

@@ -19,47 +19,15 @@ namespace GymBuddy.Migrations
                 .HasAnnotation("ProductVersion", "5.0.5")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("GymBuddy.Models.Category", b =>
+            modelBuilder.Entity("GymBuddy.Models.BodyBuildingWorkout", b =>
                 {
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("ApplicationUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("ApplicationId")
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CategoryId");
-
-                    b.HasIndex("ApplicationUserId");
-
-                    b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("GymBuddy.Models.Exercise", b =>
-                {
-                    b.Property<int>("ExerciseId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ExerciseId");
-
-                    b.ToTable("Exercises");
-                });
-
-            modelBuilder.Entity("GymBuddy.Models.MaxLift", b =>
-                {
-                    b.Property<int>("MaxLiftId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
@@ -73,33 +41,87 @@ namespace GymBuddy.Migrations
                     b.Property<decimal>("MaxSquat")
                         .HasColumnType("decimal(5,2)");
 
-                    b.HasKey("MaxLiftId");
-
-                    b.HasIndex("ApplicationUserId")
-                        .IsUnique()
-                        .HasFilter("[ApplicationUserId] IS NOT NULL");
-
-                    b.ToTable("MaxLifts");
-                });
-
-            modelBuilder.Entity("GymBuddy.Models.UserWorkout", b =>
-                {
-                    b.Property<int>("UserWorkoutId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("WorkoutDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("UserWorkoutId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("UserWorkouts");
+                    b.ToTable("BodyBuildingWorkouts");
+                });
+
+            modelBuilder.Entity("GymBuddy.Models.PowerBuildingWorkout", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ApplicationId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<decimal>("MaxBench")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<decimal>("MaxDeadLift")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<decimal>("MaxSquat")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("WorkoutDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("PowerBuildingWorkouts");
+                });
+
+            modelBuilder.Entity("GymBuddy.Models.PowerliftWorkout", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ApplicationId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<decimal>("MaxBench")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<decimal>("MaxDeadLift")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<decimal>("MaxSquat")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("WorkoutDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("PowerliftWorkouts");
                 });
 
             modelBuilder.Entity("GymBuddy.Models.WorkoutExercise", b =>
@@ -109,28 +131,22 @@ namespace GymBuddy.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("ExerciseId")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MaxLiftId")
+                    b.Property<decimal?>("OneRepMax")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<int?>("RPE")
                         .HasColumnType("int");
 
                     b.Property<int>("Reps")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserWorkoutId")
+                    b.Property<int>("Sets")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Weight")
-                        .HasColumnType("decimal(5,2)");
-
                     b.HasKey("WorkoutExerciseId");
-
-                    b.HasIndex("ExerciseId");
-
-                    b.HasIndex("MaxLiftId");
-
-                    b.HasIndex("UserWorkoutId");
 
                     b.ToTable("WorkoutExercises");
                 });
@@ -354,60 +370,31 @@ namespace GymBuddy.Migrations
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
-            modelBuilder.Entity("GymBuddy.Models.Category", b =>
+            modelBuilder.Entity("GymBuddy.Models.BodyBuildingWorkout", b =>
                 {
                     b.HasOne("GymBuddy.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany()
+                        .WithMany("BodyBuildingWorkouts")
                         .HasForeignKey("ApplicationUserId");
 
                     b.Navigation("ApplicationUser");
                 });
 
-            modelBuilder.Entity("GymBuddy.Models.MaxLift", b =>
+            modelBuilder.Entity("GymBuddy.Models.PowerBuildingWorkout", b =>
                 {
                     b.HasOne("GymBuddy.Models.ApplicationUser", "ApplicationUser")
-                        .WithOne("MaxLift")
-                        .HasForeignKey("GymBuddy.Models.MaxLift", "ApplicationUserId");
+                        .WithMany("PowerBuildingWorkouts")
+                        .HasForeignKey("ApplicationUserId");
 
                     b.Navigation("ApplicationUser");
                 });
 
-            modelBuilder.Entity("GymBuddy.Models.UserWorkout", b =>
+            modelBuilder.Entity("GymBuddy.Models.PowerliftWorkout", b =>
                 {
-                    b.HasOne("GymBuddy.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("GymBuddy.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany("PowerliftWorkouts")
+                        .HasForeignKey("ApplicationUserId");
 
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("GymBuddy.Models.WorkoutExercise", b =>
-                {
-                    b.HasOne("GymBuddy.Models.Exercise", "Exercise")
-                        .WithMany("WorkoutExercises")
-                        .HasForeignKey("ExerciseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GymBuddy.Models.MaxLift", "MaxLift")
-                        .WithMany("WorkoutExercises")
-                        .HasForeignKey("MaxLiftId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GymBuddy.Models.UserWorkout", "UserWorkout")
-                        .WithMany("WorkoutExercises")
-                        .HasForeignKey("UserWorkoutId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Exercise");
-
-                    b.Navigation("MaxLift");
-
-                    b.Navigation("UserWorkout");
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -461,24 +448,13 @@ namespace GymBuddy.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("GymBuddy.Models.Exercise", b =>
-                {
-                    b.Navigation("WorkoutExercises");
-                });
-
-            modelBuilder.Entity("GymBuddy.Models.MaxLift", b =>
-                {
-                    b.Navigation("WorkoutExercises");
-                });
-
-            modelBuilder.Entity("GymBuddy.Models.UserWorkout", b =>
-                {
-                    b.Navigation("WorkoutExercises");
-                });
-
             modelBuilder.Entity("GymBuddy.Models.ApplicationUser", b =>
                 {
-                    b.Navigation("MaxLift");
+                    b.Navigation("BodyBuildingWorkouts");
+
+                    b.Navigation("PowerBuildingWorkouts");
+
+                    b.Navigation("PowerliftWorkouts");
                 });
 #pragma warning restore 612, 618
         }

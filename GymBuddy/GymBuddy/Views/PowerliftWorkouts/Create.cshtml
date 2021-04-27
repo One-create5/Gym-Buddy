@@ -1,0 +1,51 @@
+﻿@model GymBuddy.Models.ViewModels.PowerliftingVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Powerlift Workout</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PowerliftWorkout.WorkoutDate" class="control-label"></label>
+                <input asp-for="PowerliftWorkout.WorkoutDate" class="form-control" />
+                <span asp-validation-for="PowerliftWorkout.WorkoutDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerliftWorkout.Title" class="control-label"></label>
+                <input asp-for="PowerliftWorkout.Title" class="form-control" />
+                <span asp-validation-for="PowerliftWorkout.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerliftWorkout.MaxBench" class="control-label"></label>
+                <input asp-for="PowerliftWorkout.MaxBench" class="form-control" />
+                <span asp-validation-for="PowerliftWorkout.MaxBench" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerliftWorkout.MaxSquat" class="control-label"></label>
+                <input asp-for="PowerliftWorkout.MaxSquat" class="form-control" />
+                <span asp-validation-for="PowerliftWorkout.MaxSquat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerliftWorkout.MaxDeadLift" class="control-label"></label>
+                <input asp-for="PowerliftWorkout.MaxDeadLift" class="form-control" />
+                <span asp-validation-for="PowerliftWorkout.MaxDeadLift" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
