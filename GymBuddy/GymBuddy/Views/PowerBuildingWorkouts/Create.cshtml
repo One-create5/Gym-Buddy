@@ -1,0 +1,56 @@
+﻿@model GymBuddy.Models.ViewModels.PowerbuildingVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>PowerBuildingWorkout</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PowerBuildingWorkout.WorkoutDate" class="control-label"></label>
+                <input asp-for="PowerBuildingWorkout.WorkoutDate" class="form-control" />
+                <span asp-validation-for="PowerBuildingWorkout.WorkoutDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerBuildingWorkout.Title" class="control-label"></label>
+                <input asp-for="PowerBuildingWorkout.Title" class="form-control" />
+                <span asp-validation-for="PowerBuildingWorkout.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerBuildingWorkout.MaxBench" class="control-label"></label>
+                <input asp-for="PowerBuildingWorkout.MaxBench" class="form-control" />
+                <span asp-validation-for="PowerBuildingWorkout.MaxBench" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerBuildingWorkout.MaxSquat" class="control-label"></label>
+                <input asp-for="PowerBuildingWorkout.MaxSquat" class="form-control" />
+                <span asp-validation-for="PowerBuildingWorkout.MaxSquat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerBuildingWorkout.MaxDeadLift" class="control-label"></label>
+                <input asp-for="PowerBuildingWorkout.MaxDeadLift" class="form-control" />
+                <span asp-validation-for="PowerBuildingWorkout.MaxDeadLift" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="PowerBuildingWorkout.ApplicationId" class="control-label"></label>
+                <input asp-for="PowerBuildingWorkout.ApplicationId" class="form-control" />
+                <span asp-validation-for="PowerBuildingWorkout.ApplicationId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,633 @@
+﻿@model GymBuddy.Models.ViewModels.PowerbuildingVM
+@*week 1*@
+
+
+<thead style="color: #b88746;">
+    <tr>
+        <th>DAY 1</th>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>1RM</th>
+        <th>Weight (lb)</th>
+        <th>RPE</th>
+    </tr>
+</thead>
+<tbody>
+    @*Day 1*@
+    @*DB Shoulder Press*@
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 57))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Wide Grip Pulldown%*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 58))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @*Cable Row*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 59))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Cable Tricep Pushdown*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 60))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*DB Lateral Raise*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 61))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @*DB French Press*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 62))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Hammer Curl*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 63))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+</tbody>
+
+
+@*Day 2*@
+
+<thead style="color: #b88746;">
+    <tr>
+        <th>DAY 2</th>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>1RM</th>
+        <th>Weight (lb)</th>
+        <th>RPE</th>
+    </tr>
+</thead>
+<tbody>
+    @*Deficit Deadlift*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 64))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxDeadLift;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Squat*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 65))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxSquat;
+                }
+                @String.Format("{0:0.00}", cal)
+
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Bench*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 66))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxBench;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Stiff Leg Deadlift*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 67))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxDeadLift;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+
+</tbody>
+
+
+@*Day 3*@
+
+<thead style="color: #b88746;">
+    <tr>
+        <th>DAY 3</th>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>1RM</th>
+        <th>Weight (lb)</th>
+        <th>RPE</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @*Close Grip Pulldown*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 68))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+                
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Skull Crusher*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 69))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+                
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @*Chest Supported Row*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 70))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*One Arm Cable Tricep Pushdown*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 71))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Barbell Curl*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 72))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+</tbody>
+
+
+@*Day 4*@
+
+<thead style="color: #b88746;">
+    <tr>
+        <th>DAY 4</th>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>1RM</th>
+        <th>Weight (lb)</th>
+        <th>RPE</th>
+    </tr>
+</thead>
+<tbody>
+    @*Squat*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 15))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxSquat;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Close Grip Bench*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 73))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxBench;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Incline Bench*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 74))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Overhead Press*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 21))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+
+</tbody>
+
+
+
+@*Day 5*@
+
+<thead style="color: #b88746;">
+    <tr>
+        <th>DAY 5</th>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>1RM</th>
+        <th>Weight (lb)</th>
+        <th>RPE</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @*Barbell Rows*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 75))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+                
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Rope Tricep Pushdown*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 76))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+                
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    <tr>
+        <td class="font-weight-bold">
+            Superset X2
+        </td>
+    </tr>
+    @*Chin up*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 77))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Decline Tricep Extension*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 78))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Cable Curl*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 79))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+</tbody>
+
+
+@*Day 6*@
+
+<thead style="color: #b88746;">
+    <tr>
+        <th>DAY 6</th>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>1RM</th>
+        <th>Weight (lb)</th>
+        <th>RPE</th>
+    </tr>
+</thead>
+<tbody>
+    @*Squat*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 80))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxSquat;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Pause Squat*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 81))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxSquat;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Bench*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 82))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxBench;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Deadlifts*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 83))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerBuildingWorkout.MaxDeadLift;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Hamstring Curl / Glute Ham Raise*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 84))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Plank*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 85))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps) seconds</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+</tbody>

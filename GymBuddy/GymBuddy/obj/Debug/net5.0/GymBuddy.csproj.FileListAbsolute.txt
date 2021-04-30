@@ -418,3 +418,12 @@ C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymB
 C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerliftWorkouts\PowerliftPartials\_Week2Partial.cshtml.g.cs
 C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerliftWorkouts\PowerliftPartials\_Week3Partial.cshtml.g.cs
 C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerliftWorkouts\PowerliftPartials\_Week4Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\Create.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\Delete.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\Details.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\Edit.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\Index.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week1Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week2Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week3Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week4Partial.cshtml.g.cs
