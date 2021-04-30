@@ -1,6 +1,6 @@
 ﻿@model GymBuddy.Models.ViewModels.PowerliftingVM
-@*week 1*@
-@*Day 1*@
+@*week 3*@
+
 
 <thead style="color: #b88746;">
     <tr>
@@ -15,44 +15,46 @@
         <th>RPE</th>
     </tr>
 </thead>
+@*Day 1*@
 <tbody>
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 2))
+    @*Deadlifts*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 36))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
             <td>@Html.DisplayFor(modelItem => item.Reps)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
             <td>
                 @{
                     var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
                 }
-                @cal
+                @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
-
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 3))
+    @*Deadlifts AMRAP 75%*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 37))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
             <td>As Much Reps As Possible (AMRAP)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
             <td>
                 @{
                     var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
                 }
-                @cal
+                @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
-
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 4))
+    @*Pause Squat*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 38))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -65,6 +67,7 @@
         </tr>
 
     }
+    @*Stiff Leg Deadlifts*@
     @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 5))
     {
         <tr>
@@ -78,6 +81,7 @@
         </tr>
 
     }
+    @*Barbell Rows*@
     @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 6))
     {
         <tr>
@@ -91,6 +95,7 @@
         </tr>
 
     }
+    @*Plank*@
     @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 7))
     {
         <tr>
@@ -118,12 +123,13 @@
         <th>Sets</th>
         <th>Reps</th>
         <th>1RM</th>
-        <th>Weight</th>
+        <th>Weight (lb)</th>
         <th>RPE</th>
     </tr>
 </thead>
 <tbody>
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 2))
+    @*Face Pull*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 8))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -131,35 +137,50 @@
             <td>@Html.DisplayFor(modelItem => item.Reps)</td>
             <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
             <td>
-                @{
-                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
-                }
-                @cal
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
+    @*Bench*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 39))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxBench;
+                }
+                @String.Format("{0:0.00}", cal)
 
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 3))
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Bench AMRAP 75.0%*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 40))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
             <td>As Much Reps As Possible (AMRAP)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
             <td>
                 @{
-                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxBench;
                 }
-                @cal
+                @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
-
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 4))
+    @*DB Incline*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 41))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -172,7 +193,8 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 5))
+    @*Pull Down*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 12))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -185,7 +207,8 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 6))
+    @*Skull Crusher*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 13))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -198,12 +221,13 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 7))
+    @*Hammer Curl*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 14))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
-            <td>@Html.DisplayFor(modelItem => item.Reps) seconds</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
             <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
             <td>
             </td>
@@ -225,48 +249,49 @@
         <th>Sets</th>
         <th>Reps</th>
         <th>1RM</th>
-        <th>Weight</th>
+        <th>Weight (lb)</th>
         <th>RPE</th>
     </tr>
 </thead>
 <tbody>
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 2))
+    @*Squat*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 42))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
             <td>@Html.DisplayFor(modelItem => item.Reps)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
             <td>
                 @{
-                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxSquat;
                 }
-                @cal
+                @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
-
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 3))
+    @*Squat AMRAP 75.0%*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 43))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
             <td>As Much Reps As Possible (AMRAP)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
             <td>
                 @{
-                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxSquat;
                 }
-                @cal
+                @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
-
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 4))
+    @*Block Pull*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 44))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -279,7 +304,8 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 5))
+    @*Barbell Row*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 18))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -292,20 +318,8 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 6))
-    {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.Name)</td>
-            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
-            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
-            <td>
-            </td>
-            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
-        </tr>
-
-    }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 7))
+    @*Plank*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 19))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -332,12 +346,13 @@
         <th>Sets</th>
         <th>Reps</th>
         <th>1RM</th>
-        <th>Weight</th>
+        <th>Weight (lb)</th>
         <th>RPE</th>
     </tr>
 </thead>
 <tbody>
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 2))
+    @*Face Pull*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 8))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -345,17 +360,45 @@
             <td>@Html.DisplayFor(modelItem => item.Reps)</td>
             <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
             <td>
-                @{
-                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
-                }
-                @cal
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
+    @*Spoto Bench*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 45))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)%</td>
+            <td>
+                @{
+                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxBench;
+                }
+                @String.Format("{0:0.00}", cal)
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
 
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 3))
+    }
+    @*Overhead Press*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 46))
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
+            <td>@Html.DisplayFor(modelItem => item.Reps)</td>
+            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
+            <td>
+            </td>
+            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+        </tr>
+
+    }
+    @*Overhead Press*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 47))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -363,17 +406,13 @@
             <td>As Much Reps As Possible (AMRAP)</td>
             <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
             <td>
-                @{
-                    var cal = (item.OneRepMax * (decimal).01) * Model.PowerliftWorkout.MaxDeadLift;
-                }
-                @cal
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
         </tr>
 
     }
-
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 4))
+    @*Pull Down*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 23))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -386,7 +425,8 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 5))
+    @*Tricep Push Down*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 24))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
@@ -399,25 +439,14 @@
         </tr>
 
     }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 6))
+
+    @*DB Curl*@
+    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 25))
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Sets)</td>
             <td>@Html.DisplayFor(modelItem => item.Reps)</td>
-            <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
-            <td>
-            </td>
-            <td> @Html.DisplayFor(modelItem => item.RPE)</td>
-        </tr>
-
-    }
-    @foreach (var item in Model.WorkoutExercises.Where(c => c.WorkoutExerciseId == 7))
-    {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.Name)</td>
-            <td>@Html.DisplayFor(modelItem => item.Sets)</td>
-            <td>@Html.DisplayFor(modelItem => item.Reps) seconds</td>
             <td>@Html.DisplayFor(modelItem => item.OneRepMax)</td>
             <td>
             </td>
