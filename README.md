@@ -95,13 +95,13 @@ Given the workout plan is already created be able to download the plan as a pdf 
 
 | Test ID | Requirement | Test Procedure | Current Status | Time Stamp | Build |
 | --- | --- | --- | --- | --- | --- | 
-| 1 | System shall correctly identify the user | User Login | Not Tested |  |  | 
-| 1.1 | System shall ask the user to login |  | Not Tested |  |  | 
-| 1.1.1 | System shall create new account if new user |  | Not Tested |  |  | 
-| 1.1.1.1 | System shall provide capability to enter user’s information |  | Not Tested |  |  | 
-| 1.2 | System shall login the user in |  | Not Tested |  |  | 
-| 2 | System shall display customer account | Website Layout | Not Tested |  |  | 
-| 2.1 | System shall provide capability to update user information |  | Not Tested |  |  | 
+| 1 | System shall correctly identify the user | User Login | pass |  |  | 
+| 1.1 | System shall ask the user to login |  | pass |  |  | 
+| 1.1.1 | System shall create new account if new user |  | pass |  |  | 
+| 1.1.1.1 | System shall provide capability to enter user’s information |  | pass |  |  | 
+| 1.2 | System shall login the user in |  | pass |  |  | 
+| 2 | System shall display customer account | Website Layout | pass |  |  | 
+| 2.1 | System shall provide capability to update user information |  | pass |  |  | 
 | 2.2 | System shall provide capability to create new workout plan |  | Not Tested |  |  | 
 | 2.2.1 | System shall provide the capability to pick between three workout plans |  | Not Tested |  |  | 
 | 2.3 | System shall provide capability to save workout plan |  | Not Tested |  |  | 
