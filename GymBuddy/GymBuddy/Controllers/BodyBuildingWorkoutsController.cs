@@ -12,26 +12,26 @@ using System.Security.Claims;
 
 namespace GymBuddy.Controllers
 {
-    public class PowerliftWorkoutsController : Controller
+    public class BodyBuildingWorkoutsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public PowerliftWorkoutsController(ApplicationDbContext context)
+        public BodyBuildingWorkoutsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: PowerliftWorkouts
+        // GET: BodyBuildingWorkouts
         public async Task<IActionResult> Index()
         {
             var user = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
-            var powerliftingContext = _context.PowerliftWorkouts.Where(p => p.ApplicationId == user);
+            var bodybuildingContext = _context.BodyBuildingWorkouts.Where(p => p.ApplicationId == user);
 
-            return View(await powerliftingContext.ToListAsync());
+            return View(await bodybuildingContext.ToListAsync());
         }
 
-        // GET: PowerliftWorkouts/Details/5
+        // GET: BodyBuildingWorkouts/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -39,54 +39,52 @@ namespace GymBuddy.Controllers
                 return NotFound();
             }
 
-            var powerliftWorkout = await _context.PowerliftWorkouts
+            var bodyBuildingWorkout = await _context.BodyBuildingWorkouts
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (powerliftWorkout == null)
+            if (bodyBuildingWorkout == null)
             {
                 return NotFound();
             }
 
-            PowerliftingVM powerliftingVM = new()
+            BodybuildingVM bodybuildingVM = new() 
             {
-                PowerliftWorkout = powerliftWorkout,
+                BodyBuildingWorkout = bodyBuildingWorkout,
                 WorkoutExercises = _context.WorkoutExercises
             };
-            
 
-            return View(powerliftingVM);
+            return View(bodybuildingVM);
         }
 
-        // GET: PowerliftWorkouts/Create
+        // GET: BodyBuildingWorkouts/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: PowerliftWorkouts/Create
+        // POST: BodyBuildingWorkouts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,WorkoutDate,Title,MaxBench,MaxSquat,MaxDeadLift, ApplicationId")] PowerliftWorkout powerliftWorkout)
+        public async Task<IActionResult> Create([Bind("Id,WorkoutDate,Title,MaxBench,MaxSquat,MaxDeadLift,ApplicationId")] BodyBuildingWorkout bodyBuildingWorkout)
         {
-
-            PowerliftingVM powerliftingVM = new() 
+            BodybuildingVM bodybuildingVM = new() 
             {
-                PowerliftWorkout = powerliftWorkout,
+                BodyBuildingWorkout = bodyBuildingWorkout,
                 WorkoutExercises = _context.WorkoutExercises
             };
 
             if (ModelState.IsValid)
             {
-                powerliftingVM.PowerliftWorkout.ApplicationId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-                _context.Add(powerliftingVM.PowerliftWorkout);
+                bodybuildingVM.BodyBuildingWorkout.ApplicationId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                _context.Add(bodybuildingVM.BodyBuildingWorkout);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(powerliftingVM);
+            return View(bodybuildingVM);
         }
 
-        // GET: PowerliftWorkouts/Edit/5
+        // GET: BodyBuildingWorkouts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -94,22 +92,22 @@ namespace GymBuddy.Controllers
                 return NotFound();
             }
 
-            var powerliftWorkout = await _context.PowerliftWorkouts.FindAsync(id);
-            if (powerliftWorkout == null)
+            var bodyBuildingWorkout = await _context.BodyBuildingWorkouts.FindAsync(id);
+            if (bodyBuildingWorkout == null)
             {
                 return NotFound();
             }
-            return View(powerliftWorkout);
+            return View(bodyBuildingWorkout);
         }
 
-        // POST: PowerliftWorkouts/Edit/5
+        // POST: BodyBuildingWorkouts/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,WorkoutDate,Title,MaxBench,MaxSquat,MaxDeadLift")] PowerliftWorkout powerliftWorkout)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,WorkoutDate,Title,MaxBench,MaxSquat,MaxDeadLift,ApplicationId")] BodyBuildingWorkout bodyBuildingWorkout)
         {
-            if (id != powerliftWorkout.Id)
+            if (id != bodyBuildingWorkout.Id)
             {
                 return NotFound();
             }
@@ -118,12 +116,12 @@ namespace GymBuddy.Controllers
             {
                 try
                 {
-                    _context.Update(powerliftWorkout);
+                    _context.Update(bodyBuildingWorkout);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PowerliftWorkoutExists(powerliftWorkout.Id))
+                    if (!BodyBuildingWorkoutExists(bodyBuildingWorkout.Id))
                     {
                         return NotFound();
                     }
@@ -134,10 +132,10 @@ namespace GymBuddy.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(powerliftWorkout);
+            return View(bodyBuildingWorkout);
         }
 
-        // GET: PowerliftWorkouts/Delete/5
+        // GET: BodyBuildingWorkouts/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -145,30 +143,30 @@ namespace GymBuddy.Controllers
                 return NotFound();
             }
 
-            var powerliftWorkout = await _context.PowerliftWorkouts
+            var bodyBuildingWorkout = await _context.BodyBuildingWorkouts
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (powerliftWorkout == null)
+            if (bodyBuildingWorkout == null)
             {
                 return NotFound();
             }
 
-            return View(powerliftWorkout);
+            return View(bodyBuildingWorkout);
         }
 
-        // POST: PowerliftWorkouts/Delete/5
+        // POST: BodyBuildingWorkouts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var powerliftWorkout = await _context.PowerliftWorkouts.FindAsync(id);
-            _context.PowerliftWorkouts.Remove(powerliftWorkout);
+            var bodyBuildingWorkout = await _context.BodyBuildingWorkouts.FindAsync(id);
+            _context.BodyBuildingWorkouts.Remove(bodyBuildingWorkout);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PowerliftWorkoutExists(int id)
+        private bool BodyBuildingWorkoutExists(int id)
         {
-            return _context.PowerliftWorkouts.Any(e => e.Id == id);
+            return _context.BodyBuildingWorkouts.Any(e => e.Id == id);
         }
     }
 }
