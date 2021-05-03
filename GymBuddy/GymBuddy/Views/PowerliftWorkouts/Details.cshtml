@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Powerlifting workout</h1>
+<h1>Powerlifting Workout</h1>
 
 <div class="table-responsive container table-sm">
     <h3 class="text-center" style="color: #b88746;">Week 1</h3>
@@ -32,10 +32,8 @@
     </table>
 </div>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.PowerliftWorkout.Id">Edit</a> |
+    @*<a asp-action="Edit" asp-route-id="@Model.PowerliftWorkout.Id">Edit</a> |*@
     <a asp-action="Index">Back to List</a>
 </div>

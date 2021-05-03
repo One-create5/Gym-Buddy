@@ -427,3 +427,12 @@ C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymB
 C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week2Partial.cshtml.g.cs
 C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week3Partial.cshtml.g.cs
 C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\PowerBuildingWorkouts\PowerbuildPartials\_Week4Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\BodybuildingPartials\_Week1Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\BodybuildingPartials\_Week2Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\BodybuildingPartials\_Week3Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\BodybuildingPartials\_Week4Partial.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\Create.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\Delete.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\Details.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\Edit.cshtml.g.cs
+C:\Users\5mate\OneDrive\Desktop\MSSA SD9\MSSA HW\Project\Gym-Buddy\GymBuddy\GymBuddy\obj\Debug\net5.0\Razor\Views\BodyBuildingWorkouts\Index.cshtml.g.cs

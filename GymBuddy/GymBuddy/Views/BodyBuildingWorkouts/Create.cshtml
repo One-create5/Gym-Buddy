@@ -1,4 +1,4 @@
-﻿@model GymBuddy.Models.BodyBuildingWorkout
+﻿@model GymBuddy.Models.ViewModels.BodybuildingVM
 
 @{
     ViewData["Title"] = "Create";
@@ -14,34 +14,29 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="WorkoutDate" class="control-label"></label>
-                <input asp-for="WorkoutDate" class="form-control" />
-                <span asp-validation-for="WorkoutDate" class="text-danger"></span>
+                <label asp-for="BodyBuildingWorkout.WorkoutDate" class="control-label"></label>
+                <input asp-for="BodyBuildingWorkout.WorkoutDate" class="form-control" />
+                <span asp-validation-for="BodyBuildingWorkout.WorkoutDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
+                <label asp-for="BodyBuildingWorkout.Title" class="control-label"></label>
+                <input asp-for="BodyBuildingWorkout.Title" class="form-control" />
+                <span asp-validation-for="BodyBuildingWorkout.Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MaxBench" class="control-label"></label>
-                <input asp-for="MaxBench" class="form-control" />
-                <span asp-validation-for="MaxBench" class="text-danger"></span>
+                <label asp-for="BodyBuildingWorkout.MaxBench" class="control-label"></label>
+                <input asp-for="BodyBuildingWorkout.MaxBench" class="form-control" />
+                <span asp-validation-for="BodyBuildingWorkout.MaxBench" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MaxSquat" class="control-label"></label>
-                <input asp-for="MaxSquat" class="form-control" />
-                <span asp-validation-for="MaxSquat" class="text-danger"></span>
+                <label asp-for="BodyBuildingWorkout.MaxSquat" class="control-label"></label>
+                <input asp-for="BodyBuildingWorkout.MaxSquat" class="form-control" />
+                <span asp-validation-for="BodyBuildingWorkout.MaxSquat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MaxDeadLift" class="control-label"></label>
-                <input asp-for="MaxDeadLift" class="form-control" />
-                <span asp-validation-for="MaxDeadLift" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ApplicationId" class="control-label"></label>
-                <input asp-for="ApplicationId" class="form-control" />
-                <span asp-validation-for="ApplicationId" class="text-danger"></span>
+                <label asp-for="BodyBuildingWorkout.MaxDeadLift" class="control-label"></label>
+                <input asp-for="BodyBuildingWorkout.MaxDeadLift" class="form-control" />
+                <span asp-validation-for="BodyBuildingWorkout.MaxDeadLift" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

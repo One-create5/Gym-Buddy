@@ -1,55 +1,38 @@
-﻿@model GymBuddy.Models.BodyBuildingWorkout
+﻿@model GymBuddy.Models.ViewModels.BodybuildingVM
 
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Bodybuilding Workout</h1>
+
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 1</h3>
+    <table class="table">
+        <partial name="~/Views/BodyBuildingWorkouts/BodybuildingPartials/_Week1Partial.cshtml" />
+    </table>
+</div>
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 2</h3>
+    <table class="table">
+        <partial name="~/Views/BodyBuildingWorkouts/BodybuildingPartials/_Week2Partial.cshtml" />
+    </table>
+</div>
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 3</h3>
+    <table class="table">
+        <partial name="~/Views/BodyBuildingWorkouts/BodybuildingPartials/_Week3Partial.cshtml" />
+    </table>
+</div>
+<div class="table-responsive container table-sm">
+    <h3 class="text-center" style="color: #b88746;">Week 4</h3>
+    <table class="table">
+        <partial name="~/Views/BodyBuildingWorkouts/BodybuildingPartials/_Week4Partial.cshtml" />
+    </table>
+</div>
 
 <div>
-    <h4>BodyBuildingWorkout</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.WorkoutDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.WorkoutDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaxBench)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaxBench)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaxSquat)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaxSquat)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaxDeadLift)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaxDeadLift)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ApplicationId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ApplicationId)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    @*<a asp-action="Edit" asp-route-id="@Model.BodyBuildingWorkout.Id">Edit</a> |*@
     <a asp-action="Index">Back to List</a>
 </div>
