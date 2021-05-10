@@ -2,7 +2,7 @@
 @*week 1*@
 @*Day 1*@
 
-<thead style="color: #b88746;">
+<thead>
     <tr>
         <th>DAY 1</th>
     </tr>
@@ -13,6 +13,7 @@
         <th>1RM</th>
         <th>Weight (lb)</th>
         <th>RPE</th>
+        @*<th>Progress</th>*@
     </tr>
 </thead>
 <tbody>
@@ -31,6 +32,12 @@
                 @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+            @*<td>
+                    <div>
+                        <input  type="checkbox" id="plBox1">
+                        <label  for="plBox1">Done</label>
+                    </div>
+                </td>*@
         </tr>
 
     }
@@ -49,6 +56,12 @@
                 @String.Format("{0:0.00}", cal)
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+            @*<td>
+                    <div>
+                        <input type="checkbox" id="plBox2">
+                        <label for="plBox2">Done</label>
+                    </div>
+                </td>*@
         </tr>
 
     }
@@ -63,6 +76,12 @@
             <td>
             </td>
             <td> @Html.DisplayFor(modelItem => item.RPE)</td>
+            @*<td>
+                    <div>
+                        <input type="checkbox" id="plBox3">
+                        <label for="plBox3">Done</label>
+                    </div>
+                </td>*@
         </tr>
 
     }
@@ -113,7 +132,7 @@
 
 @*Day 2*@
 
-<thead style="color: #b88746;">
+<thead>
     <tr>
         <th>DAY 2</th>
     </tr>
@@ -239,7 +258,7 @@
 
 @*Day 3*@
 
-<thead style="color: #b88746;">
+<thead>
     <tr>
         <th>DAY 3</th>
     </tr>
@@ -336,7 +355,7 @@
 
 @*Day 4*@
 
-<thead style="color: #b88746;">
+<thead>
     <tr>
         <th>DAY 4</th>
     </tr>
@@ -454,3 +473,4 @@
 
     }
 </tbody>
+

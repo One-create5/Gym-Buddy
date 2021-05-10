@@ -12,5 +12,8 @@ namespace GymBuddy.Models.ViewModels
         public PowerliftWorkout PowerliftWorkout { get; set; }
         public IEnumerable<WorkoutExercise> WorkoutExercises { get; set; }
 
+
+
+
     }
 }

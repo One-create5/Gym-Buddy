@@ -10,51 +10,55 @@
 @*<p>
     <a asp-action="Create">Create New</a>
 </p>*@
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.WorkoutDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaxBench)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaxSquat)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaxDeadLift)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.WorkoutDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaxBench)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaxSquat)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaxDeadLift)
-            </td>
-            <td>
-                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="table-responsive container table-sm">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.WorkoutDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaxBench)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaxSquat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaxDeadLift)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WorkoutDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxBench)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxSquat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxDeadLift)
+                    </td>
+                    <td>
+                        @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                        <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-dumbbell"></i></a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

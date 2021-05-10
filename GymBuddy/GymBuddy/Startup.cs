@@ -29,7 +29,7 @@ namespace GymBuddy
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
-                Configuration.GetConnectionString("GymBuddyDb")));
+                Configuration.GetConnectionString("AzureDb")));
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();

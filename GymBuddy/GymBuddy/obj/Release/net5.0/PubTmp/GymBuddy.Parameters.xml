@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="GymBuddy100" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\5mate\\OneDrive\\Desktop\\MSSA\ SD9\\MSSA\ HW\\Project\\Gym-Buddy\\GymBuddy\\GymBuddy\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

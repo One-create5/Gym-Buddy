@@ -9,9 +9,11 @@ using GymBuddy.Data;
 using GymBuddy.Models;
 using System.Security.Claims;
 using GymBuddy.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GymBuddy.Controllers
 {
+    [Authorize]
     public class PowerBuildingWorkoutsController : Controller
     {
         private readonly ApplicationDbContext _context;

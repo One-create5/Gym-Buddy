@@ -1,0 +1,27 @@
+
+body {
+	background-color: #f5f5f5;
+  }
+
+  .jumbotron
+  {
+	background-color: #072C50;
+	color: #B88746;
+  }
+
+
+  h2
+  {
+	  color: #072C50;
+  }
+
+  .credit
+  {
+	  text-align: left;
+	  font-size: xx-small;
+  }
+
+  .left
+  {
+	  text-align: left;
+  }

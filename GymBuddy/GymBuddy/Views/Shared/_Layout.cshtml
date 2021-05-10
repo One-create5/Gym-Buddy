@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/Navigation-with-Buttons.css">
     <link rel="stylesheet" href="/css/Projects-Clean.css">
     <link rel="stylesheet" href="~/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 <a href="@Url.Action("Index", "Home")" style="margin: 0px 0px">
                     <img src="~/images/bullBuddy.png" style="height: 100px;background: #ffffff;color: rgb(51, 51, 51);" title="Bull Buddy" alt="Picture of a bull figure" />
                 </a>
-                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background:#b88746">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,6 +65,8 @@
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
