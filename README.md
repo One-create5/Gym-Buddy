@@ -1,5 +1,5 @@
 # <a name="top"></a> Gym-Buddy (Active Project)
-Workout generator application
+Workout generator application : https://gymbuddy100.azurewebsites.net/
 
 # Table of Contents
 * [Concept](#concept)
