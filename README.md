@@ -95,16 +95,16 @@ Given the workout plan is already created be able to download the plan as a pdf 
 
 | Test ID | Requirement | Test Procedure | Current Status | Time Stamp | Build |
 | --- | --- | --- | --- | --- | --- | 
-| 1 | System shall correctly identify the user | User Login | pass |  |  | 
-| 1.1 | System shall ask the user to login |  | pass |  |  | 
-| 1.1.1 | System shall create new account if new user |  | pass |  |  | 
-| 1.1.1.1 | System shall provide capability to enter user’s information |  | pass |  |  | 
-| 1.2 | System shall login the user in |  | pass |  |  | 
-| 2 | System shall display customer account | Website Layout | pass |  |  | 
-| 2.1 | System shall provide capability to update user information |  | pass |  |  | 
-| 2.2 | System shall provide capability to create new workout plan |  | Not Tested |  |  | 
-| 2.2.1 | System shall provide the capability to pick between three workout plans |  | Not Tested |  |  | 
-| 2.3 | System shall provide capability to save workout plan |  | Not Tested |  |  | 
+| 1 | System shall correctly identify the user | User Login | pass | 05/14/2021 |  | 
+| 1.1 | System shall ask the user to login |  | pass | 05/14/2021 |  | 
+| 1.1.1 | System shall create new account if new user |  | pass | 05/14/2021 |  | 
+| 1.1.1.1 | System shall provide capability to enter user’s information |  | pass | 05/14/2021 |  | 
+| 1.2 | System shall login the user in |  | pass | 05/14/2021 |  | 
+| 2 | System shall display customer account | Website Layout | pass | 05/14/2021 |  | 
+| 2.1 | System shall provide capability to update user information |  | pass | 05/14/2021 |  | 
+| 2.2 | System shall provide capability to create new workout plan |  | pass | 05/14/2021 |  | 
+| 2.2.1 | System shall provide the capability to pick between three workout plans |  | pass | 05/14/2021 |  | 
+| 2.3 | System shall provide capability to save workout plan |  | pass | 05/14/2021 |  | 
 | 2.3.1 | System shall provide the capability to save workout plan as a PDF or Excel file |  | Not Tested |  |  | 
 | 3 | System shall export workout plan as PDF or Excel file |  | Not Tested |  |  | 
 | 3.1 | Given authorization, system shall export file |  | Not Tested |  |  | 
