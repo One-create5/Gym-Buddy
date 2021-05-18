@@ -7,7 +7,7 @@ https://gymbuddy100.azurewebsites.net
 ### lessons learned:
 * what did you do right? </br>
 Kept the scope of my project small. 
-My project views as simple and clean.
+My project views are simple and clean.
 * what did you do wrong? </br>
  I did not take the time to develop a well-structured database schema.
 
