@@ -1,4 +1,4 @@
-# <a name="top"></a> Gym-Buddy (Active Project)
+# <a name="top"></a> Gym-Buddy
 Workout generator application : https://gymbuddy100.azurewebsites.net/
 
 # Table of Contents
